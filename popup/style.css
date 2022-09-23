@@ -1,6 +1,11 @@
 html,
 body {
-  width: 200px;
+  width: 250px;
+}
+
+.input-group{
+  margin: 2% auto;
+  padding: 15px;
 }
 
 .hidden {
