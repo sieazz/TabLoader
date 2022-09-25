@@ -6,18 +6,18 @@ let supportedProtocols = ["https:", "http:", "ftp:", "file:"];
 
 
 /* Setting bookmarks */
-// Get the id of root(tabLoader folder)
+// Get the id of root(TabLoader folder)
 // Create root if it not exists
-browser.bookmarks.search({title: "tabLoader"})
+browser.bookmarks.search({title: "TabLoader"})
     .then((res) => {
         if (res.length === 0) {
-            browser.bookmarks.create({title: "tabLoader", type: "folder"})
+            browser.bookmarks.create({title: "TabLoader", type: "folder"})
             .then((node) => {
                 rootId = node.id;
             });
         } else {
             // It should be guarenteed that
-            // There is no other folder named "tabLoader"..
+            // There is no other folder named "TabLoader"..
             rootId = res[0].id;
         }
     });
@@ -39,7 +39,7 @@ saveButton.addEventListener("click", (e) => {
                 }
             });
 
-            
+            // Create folder under root and save tabs on it
             if (validTabList.length > 0) {
                 title = saveInput.value;
 
