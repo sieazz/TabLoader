@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "TabLoader",
-    "version": "0.1",
+    "version": "0.1.0",
   
-    "description": "TBA",
+    "description": "An extension which supports saving every tabs from browser window and loading them at once",
     "icons": {
       "48": "icons/icon.png"
     },
